@@ -1,9 +1,12 @@
-// $(function () {
-//   const media = document.getElementById('jsAudio');
-//   console.log(media);
-//   setTimeout(() => {
-//     media.muted = false;
-//     media.play();
-//   }, 2000);
-// });
+$(function () {
+  const media = document.getElementById('jsAudio');
+  const played = false;
+
+  document.addEventListener('mousemove', () => {
+    if (!played) {
+      media.muted = false;
+      media.play();
+    }
+  });
+});
 //# sourceMappingURL=scripts.min.js.map
